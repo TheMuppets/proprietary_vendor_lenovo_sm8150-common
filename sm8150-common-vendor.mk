@@ -86,7 +86,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/sm8150-common/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/lenovo/sm8150-common/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
     vendor/lenovo/sm8150-common/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
-    vendor/lenovo/sm8150-common/proprietary/vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@2.0-service.rc \
     vendor/lenovo/sm8150-common/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/lenovo/sm8150-common/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
     vendor/lenovo/sm8150-common/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
@@ -359,8 +358,6 @@ PRODUCT_PACKAGES += \
     libqrtr \
     libqseed3 \
     libqsocket \
-    libqti-iopd-client \
-    libqti-iopd \
     libqtikeymaster4 \
     librcc \
     libril-qc-hal-qmi \
@@ -438,8 +435,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.latency@1.0 \
     vendor.qti.hardware.data.qmi@1.0 \
     vendor.qti.hardware.fm@1.0_vendor \
-    vendor.qti.hardware.iop@1.0 \
-    vendor.qti.hardware.iop@2.0 \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
@@ -563,7 +558,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.1-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
-    vendor.qti.hardware.iop@2.0-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.qteeconnector@1.0-service \
     vendor.qti.hardware.soter@1.0-service \
