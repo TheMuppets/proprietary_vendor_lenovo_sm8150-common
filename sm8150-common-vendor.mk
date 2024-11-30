@@ -224,7 +224,7 @@ PRODUCT_PACKAGES += \
     libmdmdetect \
     libmdsprpc \
     libminkdescriptor \
-    libmmosal \
+    libmmosal_vendor \
     libmulawdec \
     libperfconfig \
     libperfgluelayer \
