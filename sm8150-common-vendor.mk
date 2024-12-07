@@ -506,21 +506,21 @@ PRODUCT_PACKAGES += \
     libsns_device_mode_skel \
     libsns_low_lat_stream_skel \
     com.qualcomm.qti.ant@1.0 \
-    com.qualcomm.qti.dpm.api@1.0 \
-    libdpmctmgr \
-    libdpmfdmgr \
-    libdpmframework \
-    libdpmtcm \
     libmmosal \
     libmmparser_lite \
-    vendor.qti.diaghal@1.0 \
+    com.qualcomm.qti.dpm.api@1.0 \
     lib-imsvideocodec \
     lib-imsvt \
     lib-imsvtextutils \
     lib-imsvtutils \
     libdiag_system \
+    libdpmctmgr \
+    libdpmfdmgr \
+    libdpmframework \
+    libdpmtcm \
     libimscamera_jni \
     libimsmedia_jni \
+    vendor.qti.diaghal@1.0 \
     vendor.qti.imsrtpservice@3.0 \
     SoterService \
     CneApp \
