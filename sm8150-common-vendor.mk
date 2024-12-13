@@ -198,7 +198,6 @@ PRODUCT_PACKAGES += \
     libcvp_common \
     libcvp_stub \
     libdiag \
-    libdsutils \
     libfastcvdsp_stub \
     libfastcvopt \
     libgcs-calwrapper \
@@ -210,7 +209,6 @@ PRODUCT_PACKAGES += \
     libhbtpclient \
     libhbtpdsp \
     libhbtpfrmwk \
-    libidl \
     libjnihelper \
     libkeymasterdeviceutils \
     libkeymasterprovision \
@@ -218,25 +216,12 @@ PRODUCT_PACKAGES += \
     liblistensoundmodel2 \
     libllvm-glnext \
     libllvm-qcom \
-    libmdmdetect \
     libmdsprpc \
-    libminkdescriptor \
     libmmosal_vendor \
     libmulawdec \
     libperfconfig \
     libperfgluelayer \
     libperfioctl \
-    libqcci_legacy \
-    libqdi \
-    libqdp \
-    libqmi \
-    libqmi_cci \
-    libqmi_client_helper \
-    libqmi_client_qmux \
-    libqmi_common_so \
-    libqmi_csi \
-    libqmi_encdec \
-    libqmiservices \
     libqti-perfd-client \
     libqti-perfd \
     libqti-util \
@@ -326,6 +311,7 @@ PRODUCT_PACKAGES += \
     libdrmfs \
     libdrmtime \
     libdsi_netctrl \
+    libdsutils \
     libgarden \
     libgarden_haltests_e2e \
     libgdtap \
@@ -336,6 +322,7 @@ PRODUCT_PACKAGES += \
     libhdr_tm \
     libhexagon_nn_stub \
     libhta_hexagon_runtime \
+    libidl \
     libizat_client_api \
     libizat_core \
     liblbs_core \
@@ -349,7 +336,9 @@ PRODUCT_PACKAGES += \
     liblowi_client \
     liblowi_wifihal \
     liblqe \
+    libmdmdetect \
     libmeters \
+    libminkdescriptor \
     libminksocket \
     libnetmgr \
     libnetmgr_common \
@@ -363,12 +352,23 @@ PRODUCT_PACKAGES += \
     libperipheral_client \
     libqcbor \
     libqcc_file_agent \
+    libqcci_legacy \
     libqcmaputils \
     libqcrilFramework \
     libqcrildatactl \
+    libqdi \
     libqdma_file_agent \
+    libqdp \
     libqisl \
+    libqmi \
+    libqmi_cci \
+    libqmi_client_helper \
+    libqmi_client_qmux \
+    libqmi_common_so \
+    libqmi_csi \
+    libqmi_encdec \
     libqmi_legacy \
+    libqmiservices \
     libqrtr \
     libqseed3 \
     libqsocket \

@@ -1490,51 +1490,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdsutils",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libdsutils.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libdiag",
-                "libcutils",
-                "libmdmdetect",
-                "libnetutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdsutils.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libdiag",
-                "libcutils",
-                "libmdmdetect",
-                "libnetutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libfastcvdsp_stub",
     owner: "lenovo",
     strip: {
@@ -2014,41 +1969,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libidl",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libidl.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libidl.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libjnihelper",
     owner: "lenovo",
     strip: {
@@ -2342,47 +2262,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmdmdetect",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmdmdetect.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmdmdetect.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmdsprpc",
     owner: "lenovo",
     strip: {
@@ -2421,47 +2300,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libion",
                 "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libminkdescriptor",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libminkdescriptor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libqcbor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libminkdescriptor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libqcbor",
-                "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],
@@ -2664,503 +2502,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqcci_legacy",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libqcci_legacy.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libdiag",
-                "libidl",
-                "libqmi_client_qmux",
-                "libqmi_legacy",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqcci_legacy.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libdiag",
-                "libidl",
-                "libqmi_client_qmux",
-                "libqmi_legacy",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqdi",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libqdi.so",
-            ],
-            shared_libs: [
-                "libdiag",
-                "libdsutils",
-                "libqmiservices",
-                "libqmi_cci",
-                "libqmi_common_so",
-                "libqmi_client_qmux",
-                "libqmi_client_helper",
-                "libqmi",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqdi.so",
-            ],
-            shared_libs: [
-                "libdiag",
-                "libdsutils",
-                "libqmiservices",
-                "libqmi_cci",
-                "libqmi_common_so",
-                "libqmi_client_qmux",
-                "libqmi_client_helper",
-                "libqmi",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqdp",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libqdp.so",
-            ],
-            shared_libs: [
-                "libdiag",
-                "libdsutils",
-                "libcutils",
-                "libqmiservices",
-                "libqmi_cci",
-                "libqmi_common_so",
-                "libqmi_client_helper",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqdp.so",
-            ],
-            shared_libs: [
-                "libdiag",
-                "libdsutils",
-                "libcutils",
-                "libqmiservices",
-                "libqmi_cci",
-                "libqmi_common_so",
-                "libqmi_client_helper",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqmi",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libqmi.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libqmi_client_qmux",
-                "libdiag",
-                "libdsutils",
-                "libqmiservices",
-                "libidl",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqmi.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libqmi_client_qmux",
-                "libdiag",
-                "libdsutils",
-                "libqmiservices",
-                "libidl",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqmi_cci",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libqmi_cci.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libqmi_encdec",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqmi_cci.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libqmi_encdec",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqmi_client_helper",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libqmi_client_helper.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libdiag",
-                "libdsutils",
-                "libqmiservices",
-                "libqmi_client_qmux",
-                "libqmi_cci",
-                "libidl",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqmi_client_helper.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libdiag",
-                "libdsutils",
-                "libqmiservices",
-                "libqmi_client_qmux",
-                "libqmi_cci",
-                "libidl",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqmi_client_qmux",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libqmi_client_qmux.so",
-            ],
-            shared_libs: [
-                "libdiag",
-                "libdsutils",
-                "libqmiservices",
-                "libidl",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqmi_client_qmux.so",
-            ],
-            shared_libs: [
-                "libdiag",
-                "libdsutils",
-                "libqmiservices",
-                "libidl",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqmi_common_so",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libqmi_common_so.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqmi_common_so.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqmi_csi",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libqmi_csi.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libqmi_encdec",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqmi_csi.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libqmi_encdec",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqmi_encdec",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libqmi_encdec.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqmi_encdec.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqmiservices",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libqmiservices.so",
-            ],
-            shared_libs: [
-                "libidl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqmiservices.so",
-            ],
-            shared_libs: [
-                "libidl",
                 "libc++",
                 "libc",
                 "libm",
@@ -6296,6 +5637,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libdsutils",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdsutils.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdiag",
+                "libcutils",
+                "libmdmdetect",
+                "libnetutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libgarden",
     owner: "lenovo",
     strip: {
@@ -6597,6 +5967,30 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcdsprpc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libidl",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libidl.so",
+            ],
+            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -7004,6 +6398,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmdmdetect",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmdmdetect.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmeters",
     owner: "lenovo",
     strip: {
@@ -7020,6 +6441,33 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblearningmodule",
                 "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libminkdescriptor",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libminkdescriptor.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libqcbor",
+                "libc++",
+                "libc",
                 "libm",
                 "libdl",
             ],
@@ -7416,6 +6864,36 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libqcci_legacy",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqcci_legacy.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libdiag",
+                "libidl",
+                "libqmi_client_qmux",
+                "libqmi_legacy",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libqcmaputils",
     owner: "lenovo",
     strip: {
@@ -7496,6 +6974,39 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libqdi",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqdi.so",
+            ],
+            shared_libs: [
+                "libdiag",
+                "libdsutils",
+                "libqmiservices",
+                "libqmi_cci",
+                "libqmi_common_so",
+                "libqmi_client_qmux",
+                "libqmi_client_helper",
+                "libqmi",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libqdma_file_agent",
     owner: "lenovo",
     strip: {
@@ -7515,6 +7026,37 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "vendor.qti.hardware.qccsyshal@1.0",
                 "libmmosal_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqdp",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqdp.so",
+            ],
+            shared_libs: [
+                "libdiag",
+                "libdsutils",
+                "libcutils",
+                "libqmiservices",
+                "libqmi_cci",
+                "libqmi_common_so",
+                "libqmi_client_helper",
                 "libc++",
                 "libc",
                 "libm",
@@ -7555,6 +7097,207 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libqmi",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqmi.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libqmi_client_qmux",
+                "libdiag",
+                "libdsutils",
+                "libqmiservices",
+                "libidl",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmi_cci",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqmi_cci.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libqmi_encdec",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmi_client_helper",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqmi_client_helper.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libdiag",
+                "libdsutils",
+                "libqmiservices",
+                "libqmi_client_qmux",
+                "libqmi_cci",
+                "libidl",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmi_client_qmux",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqmi_client_qmux.so",
+            ],
+            shared_libs: [
+                "libdiag",
+                "libdsutils",
+                "libqmiservices",
+                "libidl",
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmi_common_so",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqmi_common_so.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmi_csi",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqmi_csi.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libqmi_encdec",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmi_encdec",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqmi_encdec.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libqmi_legacy",
     owner: "lenovo",
     strip: {
@@ -7573,6 +7316,31 @@ cc_prebuilt_library_shared {
                 "libqmiservices",
                 "libidl",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqmiservices",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libqmiservices.so",
+            ],
+            shared_libs: [
+                "libidl",
                 "libc++",
                 "libc",
                 "libm",
