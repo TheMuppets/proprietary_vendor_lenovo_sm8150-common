@@ -226,7 +226,6 @@ PRODUCT_PACKAGES += \
     libperfconfig \
     libperfgluelayer \
     libperfioctl \
-    libpvr \
     libqcci_legacy \
     libqdi \
     libqdp \
