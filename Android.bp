@@ -1802,6 +1802,51 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libjnihelper",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libjnihelper.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libqmiservices",
+                "libqmi_cci",
+                "libcacertclient",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libjnihelper.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libqmiservices",
+                "libqmi_cci",
+                "libcacertclient",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "liblistensoundmodel2",
     owner: "lenovo",
     strip: {
@@ -3974,6 +4019,41 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.fm@1.0-impl",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "vendor.qti.hardware.fm@1.0_vendor",
+                "android.hardware.bluetooth@1.0-impl-qti",
+                "libqmi",
+                "libqmiservices",
+                "libqmi_cci",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.qseecom@1.0-impl",
     owner: "lenovo",
     strip: {
@@ -5788,35 +5868,6 @@ cc_prebuilt_library_shared {
                 "libloc_api_v02",
                 "libsqlite",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libjnihelper",
-    owner: "lenovo",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libjnihelper.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libqmiservices",
-                "libqmi_cci",
-                "libcacertclient",
                 "libc++",
                 "libc",
                 "libm",
@@ -9706,7 +9757,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.fm@1.0",
+    name: "vendor.qti.hardware.fm@1.0_vendor",
+    stem: "vendor.qti.hardware.fm@1.0",
     owner: "lenovo",
     strip: {
         none: true,
@@ -11313,6 +11365,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "fm_helium",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/fm_helium.so",
+            ],
+            shared_libs: [
+                "libfm-hci",
+                "liblog",
+                "libnativehelper",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "lib-imsvideocodec",
     owner: "lenovo",
     strip: {
@@ -11597,6 +11677,36 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libfm-hci",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libfm-hci.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libbase",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "vendor.qti.hardware.fm@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libimscamera_jni",
     owner: "lenovo",
     strip: {
@@ -11665,6 +11775,34 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.fm@1.0",
+    owner: "lenovo",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.qti.hardware.fm@1.0.so",
             ],
             shared_libs: [
                 "libhidlbase",
@@ -12149,6 +12287,34 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "fm_qsoc_patches",
+    owner: "lenovo",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/fm_qsoc_patches",
+            ],
+            shared_libs: [
+                "libqmi",
+                "libqmi_cci",
+                "libqmiservices",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "garden_app",
     owner: "lenovo",
     target: {
@@ -12220,7 +12386,7 @@ cc_prebuilt_binary {
                 "libutils",
                 "libhidlbase",
                 "android.hardware.bluetooth@1.0",
-                "vendor.qti.hardware.fm@1.0",
+                "vendor.qti.hardware.fm@1.0_vendor",
                 "com.dsi.ant@1.0",
                 "vendor.qti.hardware.bluetooth_sar@1.0",
                 "vendor.qti.hardware.bluetooth_sar@1.1",

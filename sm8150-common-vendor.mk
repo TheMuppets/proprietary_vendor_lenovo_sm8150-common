@@ -206,6 +206,7 @@ PRODUCT_PACKAGES += \
     libhbtpclient \
     libhbtpdsp \
     libhbtpfrmwk \
+    libjnihelper \
     liblistensoundmodel2 \
     libllvm-glnext \
     libllvm-qcom \
@@ -262,6 +263,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_sar@1.1-impl \
     vendor.qti.hardware.btconfigstore@1.0-impl \
     vendor.qti.hardware.btconfigstore@2.0-impl \
+    vendor.qti.hardware.fm@1.0-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
@@ -322,7 +324,6 @@ PRODUCT_PACKAGES += \
     libidl \
     libizat_client_api \
     libizat_core \
-    libjnihelper \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
@@ -452,7 +453,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.iwlan@1.0 \
     vendor.qti.hardware.data.latency@1.0 \
     vendor.qti.hardware.data.qmi@1.0 \
-    vendor.qti.hardware.fm@1.0 \
+    vendor.qti.hardware.fm@1.0_vendor \
     vendor.qti.hardware.iop@1.0 \
     vendor.qti.hardware.iop@2.0 \
     vendor.qti.hardware.qccsyshal@1.0 \
@@ -518,6 +519,7 @@ PRODUCT_PACKAGES += \
     libmmosal \
     libmmparser_lite \
     com.qualcomm.qti.dpm.api@1.0 \
+    fm_helium \
     lib-imsvideocodec \
     lib-imsvt \
     lib-imsvtextutils \
@@ -527,9 +529,11 @@ PRODUCT_PACKAGES += \
     libdpmfdmgr \
     libdpmframework \
     libdpmtcm \
+    libfm-hci \
     libimscamera_jni \
     libimsmedia_jni \
     vendor.qti.diaghal@1.0 \
+    vendor.qti.hardware.fm@1.0 \
     vendor.qti.imsrtpservice@3.0 \
     SoterService \
     CneApp \
@@ -559,6 +563,7 @@ PRODUCT_PACKAGES += \
     cnss-daemon \
     dpmQmiMgr \
     dspservice \
+    fm_qsoc_patches \
     garden_app \
     hvdcp_opti \
     android.hardware.bluetooth@1.0-service-qti \
