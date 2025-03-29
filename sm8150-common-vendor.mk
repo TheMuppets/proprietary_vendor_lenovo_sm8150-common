@@ -437,6 +437,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0-service \
     vendor.qti.gnss@4.0 \
     vendor.qti.hardware.alarm@1.0 \
+    vendor.qti.hardware.cacert@1.0 \
     vendor.qti.hardware.data.cne.internal.api@1.0 \
     vendor.qti.hardware.data.cne.internal.constants@1.0 \
     vendor.qti.hardware.data.cne.internal.server@1.0 \
