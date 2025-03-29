@@ -288,6 +288,9 @@ PRODUCT_PACKAGES += \
     libSecureUILib \
     libStDrvInt \
     libaoa \
+    libasn1cper \
+    libasn1crt \
+    libasn1crtx \
     libbatching \
     libbtnv \
     libcacertclient \
@@ -405,6 +408,8 @@ PRODUCT_PACKAGES += \
     libwvhidl \
     libxml \
     libxtadapter \
+    libxtwifi_server_protocol \
+    libxtwifi_server_protocol_uri_v3 \
     libwvdrmengine \
     qcrild_librilutils \
     qtibus \
