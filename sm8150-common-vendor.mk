@@ -206,7 +206,6 @@ PRODUCT_PACKAGES += \
     libhbtpclient \
     libhbtpdsp \
     libhbtpfrmwk \
-    libjnihelper \
     liblistensoundmodel2 \
     libllvm-glnext \
     libllvm-qcom \
@@ -323,6 +322,7 @@ PRODUCT_PACKAGES += \
     libidl \
     libizat_client_api \
     libizat_core \
+    libjnihelper \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
