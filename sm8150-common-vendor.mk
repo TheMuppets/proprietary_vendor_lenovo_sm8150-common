@@ -173,7 +173,6 @@ PRODUCT_PACKAGES += \
     libGLESv2_adreno \
     libq3dtools_adreno \
     libq3dtools_esx \
-    android.hardware.keymaster@3.0-impl-qti \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vulkan.adreno \
@@ -207,9 +206,6 @@ PRODUCT_PACKAGES += \
     libhbtpdsp \
     libhbtpfrmwk \
     libjnihelper \
-    libkeymasterdeviceutils \
-    libkeymasterprovision \
-    libkeymasterutils \
     liblistensoundmodel2 \
     libllvm-glnext \
     libllvm-qcom \
@@ -222,7 +218,6 @@ PRODUCT_PACKAGES += \
     libqti-perfd-client \
     libqti-perfd \
     libqti-util \
-    libqtikeymaster4 \
     libscveCommon \
     libscveCommon_stub \
     libscveObjectSegmentation \
@@ -258,6 +253,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss@2.1-impl-qti \
+    android.hardware.keymaster@3.0-impl-qti \
     com.dsi.ant@1.0-impl \
     vendor.qti.esepowermanager@1.1-impl \
     vendor.qti.gnss@4.0-impl \
@@ -322,6 +318,9 @@ PRODUCT_PACKAGES += \
     libidl \
     libizat_client_api \
     libizat_core \
+    libkeymasterdeviceutils \
+    libkeymasterprovision \
+    libkeymasterutils \
     liblbs_core \
     liblearningmodule \
     libloc_api_v02 \
@@ -371,6 +370,7 @@ PRODUCT_PACKAGES += \
     libqsocket \
     libqti-iopd-client \
     libqti-iopd \
+    libqtikeymaster4 \
     librcc \
     libril-qc-hal-qmi \
     libril-qc-logger \
