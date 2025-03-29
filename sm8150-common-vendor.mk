@@ -233,6 +233,8 @@ PRODUCT_PACKAGES += \
     libvpplibrary \
     vendor.qti.hardware.cvp@1.0 \
     vendor.qti.hardware.dsp@1.0 \
+    vendor.qti.hardware.improvetouch.touchcompanion@1.0-service \
+    vendor.qti.hardware.improvetouch.touchcompanion@1.0 \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
