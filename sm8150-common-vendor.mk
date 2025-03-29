@@ -252,7 +252,6 @@ PRODUCT_PACKAGES += \
     libscveObjectTracker \
     libscveObjectTracker_stub \
     libsdsprpc \
-    libspcom \
     libsysmon_cdsp_skel \
     libthermalclient \
     libvppclient \
@@ -397,6 +396,7 @@ PRODUCT_PACKAGES += \
     libsecureui_svcsock \
     libsettings \
     libslimclient \
+    libspcom \
     libspl \
     libssd \
     libsystem_health_mon \
