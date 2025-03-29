@@ -196,6 +196,7 @@ PRODUCT_PACKAGES += \
     libdiag \
     libfastcvdsp_stub \
     libfastcvopt \
+    libfastrpc_utf_stub \
     libgcs-calwrapper \
     libgcs-ipc \
     libgcs-osal \
