@@ -187,6 +187,7 @@ PRODUCT_PACKAGES += \
     libadreno_app_profiles \
     libadreno_utils \
     libadsp_default_listener \
+    libadsprpc \
     libbluetooth_audio_session_qti \
     libc2d30_bltlib \
     libcapiv2svacnn \
@@ -394,6 +395,7 @@ PRODUCT_PACKAGES += \
     libslimclient \
     libspcom \
     libspl \
+    libssc_default_listener \
     libssd \
     libsystem_health_mon \
     libtime_genoff \
