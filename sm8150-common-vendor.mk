@@ -426,7 +426,7 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.4 \
     vendor.display.color@1.5 \
     vendor.display.postproc@1.0 \
-    vendor.goodix.extend.service@2.0 \
+    vendor.goodix.extend.service@2.0_vendor \
     vendor.qti.data.factory@2.0 \
     vendor.qti.data.factory@2.1 \
     vendor.qti.data.slm@1.0 \

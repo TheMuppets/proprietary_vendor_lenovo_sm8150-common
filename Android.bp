@@ -8917,7 +8917,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.goodix.extend.service@2.0",
+    name: "vendor.goodix.extend.service@2.0_vendor",
     owner: "lenovo",
     strip: {
         none: true,
@@ -8925,7 +8925,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.goodix.extend.service@2.0.so",
+                "proprietary/vendor/lib64/vendor.goodix.extend.service@2.0_vendor.so",
             ],
             shared_libs: [
                 "libhidlbase",
