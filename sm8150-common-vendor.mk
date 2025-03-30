@@ -397,7 +397,6 @@ PRODUCT_PACKAGES += \
     libslimclient \
     libspcom \
     libspl \
-    libssc_default_listener \
     libssd \
     libsystem_health_mon \
     libtime_genoff \
