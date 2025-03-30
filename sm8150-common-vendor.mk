@@ -496,7 +496,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0-service-Impl \
     vendor.qti.imsrtpservice@3.0_vendor \
     vendor.qti.latency@2.0 \
-    vendor.zui.hardware.ifaa@1.0 \
+    vendor.zui.hardware.ifaa@1.0_vendor \
     capi_v2_aptX_Classic \
     capi_v2_aptX_HD \
     libVC1Dec \

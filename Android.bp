@@ -11004,7 +11004,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.zui.hardware.ifaa@1.0",
+    name: "vendor.zui.hardware.ifaa@1.0_vendor",
     owner: "lenovo",
     strip: {
         none: true,
@@ -11012,7 +11012,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.zui.hardware.ifaa@1.0.so",
+                "proprietary/vendor/lib64/vendor.zui.hardware.ifaa@1.0_vendor.so",
             ],
             shared_libs: [
                 "libhidlbase",
@@ -13050,6 +13050,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/vendor.zui.hardware.ifaa@1.0-service",
             ],
             shared_libs: [
+                "vendor.zui.hardware.ifaa@1.0_vendor",
                 "liblog",
                 "libcutils",
                 "libbase",
